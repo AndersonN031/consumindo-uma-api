@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BitBank - Finanças pessoais</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="index.js" defer></script>
+  <link rel="shortcut icon" href="bank.png" type="image/x-icon">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <form action="http://localhost:3000/transactions" method="delete" class="form">
+        <h2>Nova Transação</h2>
+        <label for="name">Nome:</label>
+        <br>
+        <input type="text" id="name" name="name" placeholder="ex: Jose Alves" required>
+        <label for="value">Valor:</label>
+        <br>
+        <input type="number" id="value" name="value" placeholder="$0.00" required>
+        <br>
+        <div class="button-group">
+          <button class="button-save">Salvar</button>
+        </div>
+        <div id="saldo-total"></div>
+      </form>
+      <section id="transactions" class="transactions"><h2>Histórico de Transações</h2></section>
+    </div>
+  </main>
+</body>
+</html>
